@@ -13,7 +13,7 @@ class Torta
 
   def status
     status = @time_baked.to_f / bake_time
-
+    #p status
     case
     when status < 0.5
       'crudo'
@@ -31,7 +31,9 @@ class Torta
   end
 end
 
-# t = Torta.new("milanesa")
-# # p t.bake!(-2)
-# # p t.status
+#t = Torta.new("milanesa")
+#p t.bake!("a")
+# p t.status
 # p t.bake_time
+# j = Torta.new("jamon")
+# p j.status
